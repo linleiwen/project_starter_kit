@@ -1,0 +1,290 @@
+# =============================================================================
+# UNIVERSAL PROJECT .GITIGNORE TEMPLATE
+# 适用于多种项目类型的通用忽略文件模板
+# =============================================================================
+
+# =============================================================================
+# SECURITY & CREDENTIALS
+# =============================================================================
+.env
+.env.*
+!.env.example
+!.env.template
+*.key
+*.pem
+*.p12
+*.crt
+*.csr
+secrets/
+credentials/
+config.local.*
+.secrets/
+
+# Cloud provider credentials
+.aws/
+.gcp/
+gcp_keys/
+*.json  # Google Cloud service account keys
+.azure/
+
+# SSH keys
+id_rsa
+id_ed25519
+*.priv
+
+# =============================================================================
+# DEVELOPMENT ENVIRONMENTS
+# =============================================================================
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+*.egg-info/
+dist/
+build/
+wheels/
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.yarn/
+package-lock.json
+yarn.lock
+.pnp.*
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+target/
+.m2/
+
+# C/C++
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.dylib
+*.a
+*.lib
+
+# Rust
+target/
+Cargo.lock
+
+# Go
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+vendor/
+
+# .NET
+bin/
+obj/
+*.dll
+*.exe
+*.pdb
+*.user
+*.aps
+*.pch
+*.vspscc
+*_i.c
+*_p.c
+
+# =============================================================================
+# IDE & EDITORS
+# =============================================================================
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*~
+.project
+.metadata
+.classpath
+.settings/
+*.sublime-*
+
+# Vim
+*.swp
+*.swo
+*.un~
+Session.vim
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+
+# =============================================================================
+# OPERATING SYSTEMS
+# =============================================================================
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.AppleDouble
+.LSOverride
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Icon?
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
+.Trash-*
+
+# =============================================================================
+# PROJECT SPECIFIC
+# =============================================================================
+
+# Custom ignore folder
+ignore/
+
+# Design files
+.design/
+*.sketch
+*.fig
+*.xd
+
+# Documentation drafts
+*_draft.md
+*_DRAFT.md
+DRAFT_*.md
+draft_*.md
+
+# TODO and planning files
+*_todo.md
+*_TODO.md
+TODO_*.md
+todo_*.md
+planning/
+notes/
+scratch/
+
+# AI assistant files
+.claude-media/*
+.cursor/
+.copilot/
+
+# =============================================================================
+# LOGS & TEMPORARY FILES
+# =============================================================================
+*.log
+*.tmp
+*.temp
+*.cache
+*.bak
+*.backup
+*.old
+*.orig
+logs/
+log/
+temp/
+tmp/
+
+# =============================================================================
+# DATABASES & DATA
+# =============================================================================
+*.db
+*.sqlite
+*.sqlite3
+data/
+*.csv
+!sample.csv
+!example.csv
+
+# =============================================================================
+# OFFICE & DOCUMENTS
+# =============================================================================
+# Excel temporary files
+~$*
+
+# Office temp files
+*.tmp
+
+# PDF files (uncomment if needed)
+*.pdf
+
+# Large media files
+*.mp4
+*.avi
+*.mkv
+*.mov
+*.wmv
+*.flv
+*.mp3
+*.wav
+*.flac
+
+# =============================================================================
+# CLOUD & DEPLOYMENT
+# =============================================================================
+.terraform/
+*.tfstate
+*.tfstate.*
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+
+# Kubernetes
+*.kubeconfig
+
+# =============================================================================
+# TESTING & COVERAGE
+# =============================================================================
+coverage/
+.nyc_output/
+.coverage
+htmlcov/
+.pytest_cache/
+.jest/
+test-results/
+coverage.xml
+
+# =============================================================================
+# CUSTOM PROJECT ADDITIONS
+# =============================================================================
+# Add your project-specific ignores below this line
